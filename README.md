@@ -86,6 +86,12 @@ Start an interactive session:
 deeplense-agent
 ```
 
+Or provide a one-shot prompt:
+
+```console
+deeplense-agent "Generate 2 Euclid-like CDM lensing images at 64 pixels with lens redshift 0.5 and source redshift 1.2"
+```
+
 For a specific provider
 ```console
 deeplense-agent --provider ollama
@@ -94,11 +100,6 @@ deeplense-agent --provider ollama
 Or if we want to run the directly:
 ```console
 python -m deeplense_agent --provider ollama --ollama-model qwen3:8b
-```
-Or provide a one-shot prompt:
-
-```console
-deeplense-agent "Generate 2 Euclid-like CDM lensing images at 64 pixels with lens redshift 0.5 and source redshift 1.2"
 ```
 
 The agent will ask follow-up questions if the request is underspecified, preview the resolved plan, and only run the simulation after you confirm.
