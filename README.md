@@ -70,7 +70,7 @@ The agent prefers Gemini by default and falls back to Ollama:
 Default model stack:
 
 - Gemini: `gemini-2.5-flash`
-- Ollama fallback: `qwen2.5:3b`
+- Ollama fallback: `qwen3:8b`
 
 ### Running The Agent
 
@@ -84,6 +84,11 @@ Start an interactive session:
 
 ```console
 deeplense-agent
+```
+
+For a specific provider
+```console
+deeplense-agent --provider ollama
 ```
 
 Or provide a one-shot prompt:
