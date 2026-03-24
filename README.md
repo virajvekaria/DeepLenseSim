@@ -91,6 +91,10 @@ For a specific provider
 deeplense-agent --provider ollama
 ```
 
+Or if we want to run the directly:
+```console
+python -m deeplense_agent --provider ollama --ollama-model qwen3:8b
+```
 Or provide a one-shot prompt:
 
 ```console
