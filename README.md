@@ -102,7 +102,3 @@ deeplense-agent "Generate 2 Euclid-like CDM lensing images at 64 pixels with len
 ```
 
 The agent will ask follow-up questions if the request is underspecified, preview the resolved plan, and only run the simulation after you confirm.
-
-```console
-python -m unittest discover -s tests -v
-```
